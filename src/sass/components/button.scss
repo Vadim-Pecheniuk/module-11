@@ -1,0 +1,11 @@
+.button {
+  outline: none;
+  text-transform: uppercase;
+  padding: 13px 32px;
+  font-family: $secondary-font-stack;
+  font-weight: 900;
+  font-size: $font-size-base;
+  line-height: $base-line-height;
+  color: $primary-white-color;
+  cursor: pointer;
+}

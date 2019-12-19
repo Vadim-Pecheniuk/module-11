@@ -1,0 +1,128 @@
+.team_mb {
+  margin-bottom: 85px;
+}
+
+.team__paragraph {
+  margin: auto;
+  text-align: center;
+  width: 949px;
+  min-height: 136px;
+  font-family: $main-font-stack;
+  font-size: $font-size-paragraph;
+  line-height: 24px;
+  color: $primary-fonts-color;
+}
+
+.team__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__card {
+  display: block;
+  width: 380px;
+  height: 540px;
+}
+
+.team__card-overlay {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background-image: $team-gradient-color;
+  opacity: 0;
+  z-index: 3;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+
+.team__card:hover .team__card-overlay {
+  transform: translateX(-10px) translateY(-10px);
+  opacity: 0.9;
+}
+
+.team__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 470px;
+  background-color: $primary-turquoise-color;
+  z-index: 1;
+}
+
+.team__card-image {
+  position: absolute;
+  width: auto;
+  height: 470px;
+  z-index: 2;
+  transition: transform 0.2s linear,
+}
+
+.team__card:hover .team__card-image {
+  transform: translateX(-10px) translateY(-10px);
+}
+
+.team__card-buttons {
+  display: flex;
+  opacity: 0;
+  z-index: 4;
+}
+
+.team__card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: $primary-nav-hover;
+  padding: 0;
+  border: none;
+  border-right: 1px solid $primary-nav-hover;
+  color: $primary-white-color;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.team__card:hover .team__card-buttons {
+  opacity: 1;
+}
+
+.team__card-button:hover {
+  background-color: $primary-turquoise-color;
+}
+
+.team__card-icon {
+  display: block;
+  width: 26px;
+  height: 22px;
+  fill: $primary-roze-color;
+}
+
+.team__card-button:hover .team__card-icon {
+  fill: $primary-white-color;
+}
+
+.team__card-headline {
+  text-align: center;
+}
+
+.team__card-name {
+  margin: 0;
+  padding: 26px 0 10px 0;
+  font-family: $secondary-font-stack;
+  font-size: $font-size-base;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+  color: $primary-dark-color;
+}
+
+.team__card-occupation {
+  margin: 0;
+  font-family: $items-font-stack;
+  font-weight: 300;
+  font-style: italic;
+  font-size: $font-size-paragraph;
+  line-height: 24px;
+  color: $primary-fonts-color;
+}

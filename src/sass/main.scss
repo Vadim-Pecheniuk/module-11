@@ -1,0 +1,22 @@
+// HELPERS
+@import './helpers/variables';
+
+// STYLES
+@import './normalize';
+@import './base.scss';
+
+// COMPONENTS
+@import './components/container.scss';
+@import './components/site-navigation';
+@import './components/bg-image';
+@import './components/nav-menu.scss';
+@import './components/atraction.scss';
+@import './components/list';
+@import './components/button.scss';
+@import './components/button-learn';
+@import './components/services-sections';
+@import './components/team';
+@import './components/footer-wrapper';
+@import './components/footer-button.scss';
+@import './components/footer-email.scss';
+@import './components/footer-site_info.scss';

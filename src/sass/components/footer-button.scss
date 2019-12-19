@@ -1,0 +1,10 @@
+.button-subscribe {
+  border: none;
+  background-color: $primary-turquoise-color;
+  opacity: 0.8;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}

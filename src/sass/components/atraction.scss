@@ -1,0 +1,21 @@
+.atraction {
+  text-align: center;
+}
+
+.attraction__item {
+  font-family: $items-font-stack;
+  font-size: 72px;
+  line-height: $base-line-height;
+  font-weight: 400;
+  color: #fff;
+}
+
+.attraction__name {
+  padding-bottom: 110px;
+  font-family: $secondary-font-stack;
+  font-size: 150px;
+  line-height: 140px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}

@@ -1,0 +1,22 @@
+.user-email {
+  display: flex;
+  width: 380px;
+  height: 42px;
+}
+
+.user-email input {
+  padding: 0;
+  border: 1px solid $primary-footer-color;
+  height: 40px;
+  width: 300px;
+}
+
+.user-email input::placeholder {
+  font-family: $main-font-stack;
+  font-weight: 300;
+  font-style: italic;
+  font-size: $font-size-base;
+  line-height: 20px;
+  padding: 14px;
+  color: $primary-footer-color;
+}
