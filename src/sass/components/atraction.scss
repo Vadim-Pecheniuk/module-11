@@ -3,19 +3,21 @@
 }
 
 .attraction__item {
+  @include font-settings(72px, 400);
   font-family: $items-font-stack;
-  font-size: 72px;
+  // font-size: 72px;
   line-height: $base-line-height;
-  font-weight: 400;
+  // font-weight: 400;
   color: #fff;
 }
 
 .attraction__name {
+  @include font-settings(150px, 700);
   padding-bottom: 110px;
   font-family: $secondary-font-stack;
-  font-size: 150px;
+  // font-size: 150px;
   line-height: 140px;
-  font-weight: 700;
+  // font-weight: 700;
   text-transform: uppercase;
   color: $primary-white-color;
 }

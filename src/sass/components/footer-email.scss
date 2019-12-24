@@ -12,10 +12,11 @@
 }
 
 .user-email input::placeholder {
+  @include font-settings($font-size-base, 300);
   font-family: $main-font-stack;
-  font-weight: 300;
+  // font-weight: 300;
   font-style: italic;
-  font-size: $font-size-base;
+  // font-size: $font-size-base;
   line-height: 20px;
   padding: 14px;
   color: $primary-footer-color;

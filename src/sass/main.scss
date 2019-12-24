@@ -1,22 +1,24 @@
 // HELPERS
 @import './helpers/variables';
+@import './helpers/placeholders';
+@import './helpers/mixin.scss';
 
 // STYLES
 @import './normalize';
 @import './base.scss';
 
 // COMPONENTS
-@import './components/container.scss';
+@import './components/container';
 @import './components/site-navigation';
 @import './components/bg-image';
-@import './components/nav-menu.scss';
-@import './components/atraction.scss';
-@import './components/list';
-@import './components/button.scss';
+@import './components/nav-menu';
+@import './components/atraction';
+// @import './components/list';
+// @import './components/button';
 @import './components/button-learn';
 @import './components/services-sections';
 @import './components/team';
 @import './components/footer-wrapper';
-@import './components/footer-button.scss';
-@import './components/footer-email.scss';
-@import './components/footer-site_info.scss';
+@import './components/footer-button';
+@import './components/footer-email';
+@import './components/footer-site_info';

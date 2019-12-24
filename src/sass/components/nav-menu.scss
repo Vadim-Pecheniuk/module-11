@@ -1,26 +1,29 @@
 .nav-menu {
+  @extend %list;
   flex-basis: 490px;
   justify-content: space-between;
-}
 
-.nav-menu__link {
-  text-decoration: none;
-  font-size: $font-size-base;
-  line-height: 16.8px;
-  font-family: $secondary-font-stack;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $primary-white-color;
-  transition: all 0.2s linear;
-  padding-bottom: 10px;
-  border-bottom: 2px solid transparent;
+  &__link {
+    @include font-settings($font-size-base, 400);
+    text-decoration: none;
+    // font-size: $font-size-base;
+    line-height: 16.8px;
+    font-family: $secondary-font-stack;
+    // font-weight: 400;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    transition: all 0.2s linear;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
 
-  &:hover,
-  &:focus {
-    color: $primary-nav-hover;
-    border-color: $primary-nav-hover;
+    &:hover,
+    &:focus {
+      color: $primary-nav-hover;
+      border-color: $primary-nav-hover;
+    }
   }
 }
+
 
 .nav-menu__svg {
   display: block;
@@ -31,7 +34,7 @@
   transition: fill 0.2s linear;
 
   &:hover,
-  &:focus {
+  :focus {
     fill: $primary-nav-hover;
   }
 }

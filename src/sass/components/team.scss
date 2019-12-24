@@ -3,12 +3,13 @@
 }
 
 .team__paragraph {
+  @include font-settings($font-size-paragraph, 400);
   margin: auto;
   text-align: center;
   width: 949px;
   min-height: 136px;
   font-family: $main-font-stack;
-  font-size: $font-size-paragraph;
+  // font-size: $font-size-paragraph;
   line-height: 24px;
   color: $primary-fonts-color;
 }
@@ -55,7 +56,7 @@
   width: auto;
   height: 470px;
   z-index: 2;
-  transition: transform 0.2s linear,
+  transition: transform 0.2s linear;
 }
 
 .team__card:hover .team__card-image {
@@ -118,11 +119,12 @@
 }
 
 .team__card-occupation {
+  @include font-settings($font-size-paragraph, 300);
   margin: 0;
-  font-family: $items-font-stack;
-  font-weight: 300;
+  font-family: $main-font-stack;
+  // font-weight: 300;
   font-style: italic;
-  font-size: $font-size-paragraph;
+  // font-size: $font-size-paragraph;
   line-height: 24px;
   color: $primary-fonts-color;
 }
